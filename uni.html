@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة الوادي الجديد</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+        /* تنسيقات الخطوط والألوان */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        header.hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('جامعة.jpg')
+                no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        header h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.6s ease;
+        }
+        .section:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .back-button {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #d2a97e, #856c4b);
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: linear-gradient(45deg, #856c4b, #d2a97e);
+        }
+
+        /* تنسيقات الجدول */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #d2a97e;
+            color: #fff;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+            transition: background-color 0.3s ease;
+        }
+        td {
+            background-color: #fff;
+        }
+        /* تأثيرات الأنيميشن */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .map-section {
+            margin: 30px auto;
+            max-width: 1000px;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <header class="hero">
+        <h1>جامعة الوادي الجديد</h1>
+    </header>
+
+    <section class="section">
+        <h2>نبذة عن الجامعة</h2>
+        <p>جامعة الوادي الجديد هي مؤسسة تعليمية رائدة في محافظة الوادي الجديد، تهدف إلى تقديم تعليم عالي الجودة وتعزيز البحث العلمي في مختلف المجالات. وتعمل الجامعة على تلبية احتياجات الطلاب وتوفير فرص تعليمية متقدمة تتماشى مع متطلبات سوق العمل.</p>
+    </section>
+
+    <section class="section">
+        <h2>كليات الجامعة حتى عام 2024</h2>
+        <table>
+            <tr>
+                <th>التخصص</th>
+            </tr>
+            <tr><td>كلية الطب</td></tr>
+            <tr><td>كلية العلوم</td></tr>
+            <tr><td>كلية الزراعة</td></tr>
+            <tr><td>كلية الآداب</td></tr>
+            <tr><td>كلية التربية</td></tr>
+            <tr><td>كلية التربية الرياضية</td></tr>
+            <tr><td>كلية الطب البيطري</td></tr>
+        </table>
+    </section>
+    <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.491781692399!2d30.60886202482884!3d25.521990718469194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1447691312f8b40f%3A0x1a96ff31fc0891f!2z2KzYp9mF2LnYqSDYp9mE2YjYp9iv2Yog2KfZhNis2K_Zitiv!5e0!3m2!1sar!2seg!4v1730714465013!5m2!1sar!2seg" 
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <a href="index.html" class="back-button">الرجوع للرئيسية</a>
+    </div>
+</body>
+</html>

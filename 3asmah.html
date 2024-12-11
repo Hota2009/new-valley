@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العاصمة الإدارية الجديدة لمحافظة الوادي الجديد</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- إضافة مكتبة Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+   body {
+    background-color: #F5EAD3; /* الخلفية الرملية */
+    color: #333333; /* النصوص العادية */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #B08D57; /* لون رأس الصفحة */
+    color: white; /* نص العنوان */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat-box {
+    background-color: #FFF5E1; /* خلفية الإحصائيات */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.stat-box .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #D9A441; /* لون الأيقونات */
+}
+
+.stat-box .info h3 {
+    font-size: 20px;
+    color: #8B5E3C; /* لون النصوص البارزة */
+}
+
+.about {
+    margin: 30px;
+    background-color: #FFFFFF; /* خلفية النصوص */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 24px;
+    color: #8B5E3C; /* لون العناوين */
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    color: #8B5E3C; /* لون عنوان المعرض */
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #B08D57; /* لون التذييل */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* تصميم قسم المعرض */
+.gallery {
+    padding: 30px;
+    background-color: #FFF5E1; /* خلفية المعرض */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    color: #8B5E3C; /* لون عنوان المعرض */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* تصميم الحاوية */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* المسافة بين الصور */
+    justify-content: center;
+}
+
+/* تصميم العناصر */
+.gallery-item {
+    flex: 1 1 calc(25% - 15px); /* عرض كل صورة بنسبة 25% مع مراعاة الفجوة */
+    max-width: calc(25% - 15px); /* نفس نسبة العرض */
+    border-radius: 8px; /* حواف مستديرة */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* التأثير عند التمرير */
+.gallery-item:hover {
+    transform: scale(1.05); /* تكبير الصورة قليلاً */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; /* الحفاظ على نسبة الأبعاد */
+    display: block;
+    border: 2px solid #D9A441; /* إطار الصورة */
+}
+
+    </style>
+</head>
+<body dir="rtl">
+
+    <!-- Header Section -->
+    <header>
+        <h1>العاصمة الإدارية الجديدة لمحافظة الوادي الجديد</h1>
+    </header>
+
+    <!-- إحصائيات المدينة -->
+    <section class="statistics">
+        <div class="stat-box">
+            <div class="icon">
+                <i class="fas fa-ruler-combined"></i>
+            </div>
+            <div class="info">
+                <h3>المساحة</h3>
+                <p>130 فدانًا</p>
+            </div>
+        </div>
+        <div class="stat-box">
+            <div class="icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <div class="info">
+                <h3>عدد المباني</h3>
+                <p>10+ منشآت حكومية</p>
+            </div>
+        </div>
+        <div class="stat-box">
+            <div class="icon">
+                <i class="fas fa-solar-panel"></i>
+            </div>
+            <div class="info">
+                <h3>محطة طاقة شمسية</h3>
+                <p>1.5 ميجاوات</p>
+            </div>
+        </div>
+        <div class="stat-box">
+            <div class="icon">
+                <i class="fas fa-tint"></i>
+            </div>
+            <div class="info">
+                <h3>محطة معالجة مياه</h3>
+                <p>1250 متر مكعب يوميًا</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- نص عن المحافظ والعاصمة -->
+    <section class="about">
+        <h2>عن العاصمة الإدارية الجديدة لمحافظة الوادي الجديد</h2>
+        <p>تم إنشاء **العاصمة الإدارية الجديدة** لمحافظة الوادي الجديد كأول نموذج على مستوى الجمهورية يُحاكي العاصمة الإدارية بالقاهرة ويرتبط بها رقميًا. تم هذا المشروع تنفيذًا لتوجيهات فخامة السيد الرئيس عبدالفتاح السيسي في يناير 2019. يهدف المشروع إلى تحسين تقديم الخدمات العامة وزيادة الإنتاجية، بالإضافة إلى رفع كفاءة الخدمات في قطاعي الحكومة والقطاع العام.</p>
+        <p>تُعد العاصمة الإدارية الجديدة إحدى أولويات محافظة الوادي الجديد، حيث تم إنشاؤها على مساحة **130 فدانًا** شمال مدينة الخارجة، لتضم العديد من المنشآت الحديثة مثل **مبنى المديريات**، **مبنى ديوان عام المحافظة**، **محطة الطاقة الشمسية** بقدرة 1.5 ميجاوات، ومحطات معالجة المياه والصرف الصحي.</p>
+        <p>العاصمة توفر بيئة عمل حديثة، بالإضافة إلى أنها تضم مرافق خدمية تساهم في تسهيل تقديم الخدمات للمواطنين. من بين مكونات العاصمة أيضًا **مدينة رياضية** و**متحف الوثائق التاريخية**، بالإضافة إلى العديد من المنشآت الحكومية الأخرى.</p>
+    </section>
+
+    <!-- معرض صور -->
+    <section class="gallery">
+        <h2>معرض الصور</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="3as 1.jpg" alt="صورة 1">
+            </div>
+            <div class="gallery-item">
+                <img src="3as 5.jpg" alt="صورة 2">
+            </div>
+            <div class="gallery-item">
+                <img src="3as 3.jpg" alt="صورة 3">
+            </div>
+            <div class="gallery-item">
+                <img src="3as 4.jpg" alt="صورة 4">
+            </div>
+        </div>
+    </section>
+
+  
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي الهجن والفروسية الدولي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* التصميم الأساسي */
+body {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ed; /* لون رملي */
+}
+
+.hero {
+    background-color: #d9a441;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.about, .stats, .gallery {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.stat-item {
+    background-color: #fff5e1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item i {
+    font-size: 24px;
+    color: #d9a441;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.stat-item span {
+    font-size: 14px;
+    color: #666;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item img {
+   
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.stats {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e4d5b7; /* لون صحراوي */
+    border-top: 5px solid #d9a441;
+    border-bottom: 5px solid #d9a441;
+}
+
+.stats h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8a6b34; /* لون نص غامق */
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #ffffff;
+    border: 2px solid #d9a441;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+}
+
+/* تنسيق الأيقونات */
+.stat-item i {
+    font-size: 40px;
+    color: #d9a441; /* لون أيقونة */
+    margin-bottom: 15px;
+}
+
+.stat-item p {
+    font-size: 1.5em;
+    color: #8a6b34;
+    margin: 10px 0;
+}
+
+.stat-item span {
+    font-size: 1em;
+    color: #666;
+}
+
+/* تحسين العرض للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        width: 80%;
+    }
+}
+img{
+    height: 200px;
+    width: 260px;
+}
+    </style>
+</head>
+<body dir="rtl">
+    <section class="hero">
+        <h1>نادي الهجن والفروسية الدولي</h1>
+        <p>شمال مدينة الخارجة - محافظة الوادي الجديد</p>
+    </section>
+
+    <section class="about">
+        <h2>نبذة عن النادي</h2>
+        <p>
+            شهد الدكتور مصطفى مدبولي، رئيس مجلس الوزراء، افتتاح نادي الهجن والفروسية الدولي بمركز الخارجة. النادي يُعد منشأة رياضية وتراثية فريدة تهدف لدعم رياضة الهجن والفروسية على مستوى محلي ودولي، ويعكس اهتمام الدولة بتطوير الرياضة وتنمية الشباب.
+        </p>
+    </section>
+
+    <section class="stats">
+        <h2>إحصائيات</h2>
+        <div class="stats-container">
+            <div class="stat-item">
+                <i class="fas fa-expand-arrows-alt"></i>
+                <p>400 فدان</p>
+                <span>إجمالي المساحة</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>40 مليون جنيه</p>
+                <span>التكلفة الإجمالية</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-road"></i>
+                <p>8 كم</p>
+                <span>طول المضمار الرياضي</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-horse"></i>
+                <p>5 كم</p>
+                <span>طول المضمار الدولي</span>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="gallery">
+        <h2>معرض الصور</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="سباق الهجن.jpg" alt="سباق الهجن">
+            </div>
+            <div class="gallery-item">
+                <img src="مضمار السباق.jpg" alt="مضمار النادي">
+            </div>
+            <div class="gallery-item">
+                <img src="الاستعراضات.jpg" alt="الاستعراضات">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
